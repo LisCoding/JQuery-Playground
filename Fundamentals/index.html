@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        alert("you are working with a JQuery cool");
+      $("#hide").click(function () {
+        $("h1").hide(function() {
+        })
+        $("p").hide(function() {
+        })
+      });
+      $("#show").click(function functionName() {
+        $("h1").show(function() {
+        })
+        $("p").show(function() {
+        })
+      });
+      $("h2").hover(function () {
+        $("h2").text("wow you are right!");
+
+      }, function () {
+        $("h2").text("JQuery is FUN!");
+      });
+
+      $('button').click(function () {
+        $("button").css('background-color', "yellow");
+      });
+
+      });
+    </script>
+    <style >
+      h2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Story</h1>
+    <p>This is a parageame</p>
+    <p>rthis is a second</p>
+    <p>I am hungry</p>
+    <button id="hide" type="button" name="button"> I will hide the the text hahahh</button>
+    <button id= "show" type="button" name="button"> I will show the the text</button>
+    <h2>JQuery is FUN!</h2>
+
+  </body>
+</html>
