@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          // using JQuery methods as getters
+          $('button').click(function () {
+            var message = $('p').text();
+            alert(message);
+          });
+
+          // using text as a setter
+          $('#msg').hover(function () {
+            $('#msg').text("Just kidding, you will love it!");
+          });
+        });
+
+      </script>
+  </head>
+  <style media="screen">
+    * {
+      color: blue;
+    }
+    #msg {
+      color: green;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <h1>Learning JQuery</h1>
+    <p>JQuery is a javascript Library that helps us to write a dry Code</p>
+    <button type="button" name="button">click I have magic :)</button>
+    <h2 id="msg">You will become addicted to JQuery</h2>
+  </body>
+</html>
