@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#head-tab').click(function () {
+          $(".header").hide();
+        });
+        $('#show').click(function () {
+          $(".header").show();
+        });
+        $('#red').click(function () {
+          $(".first-div p").addClass("selected");
+        });
+        $('#toggle').click(function () {
+          $(".second-div p").slideToggle();
+        });
+        $('#append').click(function () {
+          $(".third-div p").append(" I AM AN APPEND");
+        });
+        $(".first-div p").after(" I am after <p> magic!!! "); // Ask instructor
+        $('#html').click(function () {
+          $("body").html("<h1> upps Sorry I delete everything</h1>");
+        });
+        $(".first-div p").before(" I am before  magic!!! ");
+        $(".title").hover(function () {
+          $(".title").text("You are going to have fun!!");
+        }, function functionName() {
+          $(".title").text("JQuery basic Assigment!");
+        });
+          // $('.title').val("I LOVE JQUERY!"); // ask
+          $(".list").hide();
+          $("#items").click(function () {
+            if($(".list:first").is(":hidden")){
+              $(".list").slideDown("slow");
+            } else {
+              $(".list").hide();
+            }
+          });
+          // $("#fade").click(function () {
+          //   $(".censored").fadeIn(100);
+          // })
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1 class="title">My JQuery basic Assigment!</h1>
+        <div class="right-arrow">
+          <p id="arrow"><=</p>
+        </div>
+        <div class="left-arrow">
+          <p>=></p>
+        </div>
+        <button id="head-tab" type="button" name="button">X</button>
+        <div class="home">
+
+        </div>
+        <input type="text" name="" value="">
+        <button type="button" name="button">look</button>
+      </div>
+      <div class="first-div">
+        <button id="show" type="button" name="button">show header</button>
+        <h1>AddClass</h1>
+        <button id="red" type="button" name="button">AddClass</button>
+        <p>Click the button to add class 'red' to this paragraph</p>
+      </div>
+      <div class="second-div">
+          <h1>AddClass</h1>
+        <button id="toggle" type="button" name="button">SlideTogle</button>
+        <p>Click the button to add class 'red' tp this paragraphhahhahahsh</p>
+
+      </div>
+      <div class="third-div">
+        <h1>AddClass</h1>
+        <button id="append" type="button" name="button">Append</button>
+        <p>Click the button to add class 'red' tp this paragraph</p>
+      </div>
+    </div>
+    <div class="fourth-div">
+      <h1>AddClass</h1>
+      <button id="html" type="button" name="button">I have super power click to see</button>
+      <p>Click the button to add class 'red' tp this paragraph</p>
+    </div>
+    <button id="items"type="button" name="button">items availables</button>
+    <div class="list">
+      <ul>
+        <li>ramdom staff</li>
+        <li>ramdom staff</li>
+        <li>ramdom staff</li>
+        <li>ramdom staff</li>
+        <li>ramdom staff</li>
+        <li>ramdom staff</li>
+        <li>ramdom staff</li>
+      </ul>
+    </div>
+    <a is="fade"href="#">More....</a>
+    <div class="censored">
+      <p> jQuery functions: Don't randomly start writing jQuery and find elements to attach jQuery code to. Think about what each function could be useful for! This is an assignment that previous students have often reverted back to so as to brush up on their jQuery in later weeks! Use the mockup as motivation, but feel free to embellish!</p>
+    </div>
+  </div>
+
+  </body>
+
+</html>

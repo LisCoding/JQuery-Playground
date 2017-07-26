@@ -1,0 +1,53 @@
+.wrapper {
+  background-color: lightgray;
+}
+.header div, .header p {
+  display: inline-block;
+  vertical-align: top;
+
+}
+.header h1 {
+  text-align: center
+}
+.header p {
+  font-size: 70px;
+  margin: 0;
+}
+
+.header {
+  background-color: pink;
+  border: 2px solid red;
+}
+.home {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+.header input {
+  margin-top: 20px;
+  padding: 15px 100px;
+}
+.header button {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.first-div, .second-div, .third-div, .fourth-div {
+  border: 2px solid black;
+  background-color: lightblue;
+
+}
+
+ .first-div p, .second-div p, .third-div p {
+  display: inline-block;
+}
+.selected {
+  color: yellow;
+  font-size: 30px;
+}
+a {
+  padding-top: 20px;
+  display:block;
+}
